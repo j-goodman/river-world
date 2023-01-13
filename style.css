@@ -11,13 +11,24 @@ li {
     list-style: none;
 }
 
-.home-page {
+.home-page, .zine-print-page {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 80px;
     width: 50%;
+}
+
+.home-page {
+    margin-top: 20px;
+}
+
+.special-abilities-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
 }
 
 .header-image {
@@ -83,6 +94,18 @@ a:hover, .bluelink:hover {
 .subclass-choice > img {
     height: 400px;
     width: auto;
+}
+
+.special-abilities-list > li {
+    margin: 30px;
+}
+
+.special-abilities-input {
+    border: 2px solid #333;
+    border-radius: 20px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 16pt;
+    padding: 8px;
 }
 
 .nondisplay {
