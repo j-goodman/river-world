@@ -1,0 +1,90 @@
+body {
+    align-items: center;
+    display: flex;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 16pt;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+.home-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 50%;
+}
+
+.header-image {
+    width: 70%;
+}
+
+.bottom-image {
+    width: 70%;
+}
+
+a, .bluelink {
+    color: #06a;
+    cursor: pointer;
+}
+
+a:hover, .bluelink:hover {
+    color: #48f;
+}
+
+.character-creator {
+    width: 60%;
+}
+
+.background-choice > li {
+    margin: 24px;
+}
+
+.background-choice > li > b {
+    text-decoration: underline;
+}
+
+.header-bar {
+    width: 50%;
+}
+
+.subclasses-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subclasses-choices {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subclass-choice {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    padding: 12px;
+}
+
+.subclass-choice:hover {
+    background: #eee;
+}
+
+.subclass-choice > img {
+    height: 400px;
+    width: auto;
+}
+
+.nondisplay {
+    display: none;
+}

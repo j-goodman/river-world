@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>River World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="files/script.js"></script>
+  </head>
+  <body>
+      <div class="header-bar">
+          <div class="back-button bluelink" id="back-button" bluelink>⇐ home</div>
+          <div class="soft-back-button bluelink nondisplay" id="soft-back-button" bluelink>← home</div>
+      </div>
+      <div class="home-page nondisplay" id="home-page">
+          <img src="files/herb-foraging.png" class="header-image" alt="">
+          <p class="intro-box">
+              <b>River World</b> is a free-to-play tabletop RPG. It's played with three regular six-sided dice, and is designed to be light on mechanics to make room for storytelling.
+              <br><br>
+              Your game can happen on a river, an ocean, a desert, or any other kind of world you’re interested in building with your group. It can be about heroes and monsters, romance, politics, business, adventure, or whatever. All the information you need to play is in the River World PDF.
+              <br><br>
+              <a href="#">Download the PDF.</a><br>
+              <a href="#" id="character-creator-button">Character Creator.</a><br>
+              <a href="#">Searchable Special Abilities List.</a><br>
+              <a href="#">Zine-printable PDF.</a><br>
+          </p>
+      </div>
+      <div class="character-creator" id="character-creator">
+          <ul class="background-choice nondisplay">
+              <p>Chooses one of these four character backgrounds:</p>
+              <li><b class='bluelink' id='warrior-pick'>The Warrior</b> is good at fighting.</li>
+              <li><b class='bluelink' id='thief-pick'>The Thief</b> is good at sneaking around and using creative or underhanded methods to get what they want.</li>
+              <li><b class='bluelink' id='merchant-pick'>The Merchant</b> makes their living doing a trade. They might be a skilled craftsman or a traveler who spends most of their time in the wilderness.</li>
+              <li><b class='bluelink' id='mage-pick'>The Mage</b> can do magic.</li>
+          </ul>
+          <ul class="subclasses-page" id="warrior-subclasses">
+              <div>Choose one of these two types of warrior:</div>
+              <ul class="subclasses-choices">
+                  <li class="subclass-choice" id="close-range-warrior-pick">
+                    <img src="files/close-range-warrior.png" alt="">
+                    <div>Close range</div>
+                  </li>
+                  <li class="subclass-choice" id="close-range-warrior-pick">
+                    <img src="files/long-range-warrior.png" alt="">
+                    <div>Long range</div>
+                  </li>
+              </ul>
+          </ul>
+      </div>
+  </body>
+</html>
