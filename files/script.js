@@ -38,7 +38,7 @@ let setupButtons = () => {
         pages.home.classList.add("nondisplay")
         pages.characterCreator.classList.remove("nondisplay")
     }
-    
+
     buttons.backButton.onclick = () => {
         buttons.backButton.classList.add("nondisplay")
         pages.home.classList.remove("nondisplay")
@@ -66,7 +66,7 @@ let hideAllButHome = () => {
 }
 
 let pickBackground = (background) => {
-  
+
 }
 
 let initializeCharacterCreator = (background) => {
@@ -75,11 +75,11 @@ let initializeCharacterCreator = (background) => {
     }
 }
 
-let arrayToOrString = (array) => {
+let arrayToAndOrString = (conjunction, array) => {
     let string = ""
     array.forEach((item, index) => {
         if (index === array.length - 1) {
-            string += "or " + item
+            string += conjunction + " " + item
         } else if (index === array.length - 2) {
             string += item + " "
         } else {
@@ -104,9 +104,15 @@ let populateSpecialAbilitiesList = (searchInput) => {
                 prerequisiteString = ability.prerequisites
             } else if (ability.prerequisites[0] === "any") {
                 prerequisiteString = "<b>either</b> "
-                prerequisiteString += arrayToOrString(ability.prerequisites.slice(1, ability.prerequisites.length))
+                prerequisiteString += arrayToAndOrString("or", ability.prerequisites.slice(1, ability.prerequisites.length))
+            } else if (ability.prerequisites[0] === "all" && ability.prerequisites.length === 3) {
+                prerequisiteString = "<b>both</b> "
+                prerequisiteString += arrayToAndOrString("and", ability.prerequisites.slice(1, ability.prerequisites.length))
+            } else if (ability.prerequisites[0] === "all") {
+                prerequisiteString = ""
+                prerequisiteString += arrayToAndOrString("<b>and</b>", ability.prerequisites.slice(1, ability.prerequisites.length))
             }
-    
+
             let item = document.createElement("li")
             item.innerHTML = `<div><b>${ability.name}</b></div>
             <div>Cost: ${ability.cost}</div>
