@@ -31,6 +31,12 @@ li {
     width: 60%;
 }
 
+@media screen and (max-width: 650px) {
+    .home-page, .zine-print-page, .special-abilities-page {
+        width: 90%;
+    }
+}
+
 .header-image {
     width: 70%;
 }
